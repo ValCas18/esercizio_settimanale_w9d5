@@ -6,6 +6,8 @@ import ActionBar from "./components/ActionBar";
 
 import Footer from "./components/Footer";
 import FirstGallery from "./components/FirstGallery";
+import SecondGallery from "./components/SecondGallery";
+import ThirdGallery from "./components/ThirdGallery";
 
 function App() {
 	return (
@@ -14,6 +16,8 @@ function App() {
 				<TopBar />
 				<ActionBar />
 				<FirstGallery title="batman" />
+				<SecondGallery title="lord%20of%20the%20rings" />
+				<ThirdGallery title="star%20wars" />
 			</Container>
 			<Footer />
 		</div>
