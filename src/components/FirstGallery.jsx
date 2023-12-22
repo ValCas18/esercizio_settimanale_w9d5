@@ -9,11 +9,8 @@ class FirstGallery extends Component {
 		try {
 			const response = await fetch(url + this.props.title);
 			if (response.ok) {
-				const newResponse = await response.json();
-				let newMovie = { ...newResponse };
-				if (newMovie.Search && Array.isArray(newMovie.Search)) {
-					this.setState({ movie: newMovie.Search });
-				}
+				const newMovie = await response.json();
+				this.setState({ movie: newMovie.Search });
 			}
 		} catch (err) {
 			console.log(err);
